@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgounr Position Demo</title>
+    <style>
+        *
+        {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            background-color: lightblue;
+            font-family: 'Trebuchet MS';
+            color: white;
+        }
+        h1
+        {
+            font-size: 50px;
+            letter-spacing: 3px;
+        }
+        body
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+        .div-1, .div-2, .div-3
+        {
+            border: 5px solid white;
+            width: 300px;
+            height: 300px;
+        }
+        .row-1, .row-2, .row-3
+        {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .row-1 .div-1
+        {
+            background: url(./image/PuppyImage.jpg) no-repeat;
+            background-size:100px  ;
+            background-position: left-top;
+        }
+        .row-1 .div-2
+        {
+            background: url(./image/PuppyImage.jpg) no-repeat;
+            background-size:100px  ;
+            background-position: center;
+        }
+        .row-1 .div-3
+        {
+            background: url(./image/PuppyImage.jpg) no-repeat;
+            background-size:100px  ;
+            background-position: right-top;
+        }
+        .row-2 .div-1
+        {
+            background: url(./image/PuppyImage.jpg) no-repeat;
+            background-size:100px  ;
+            background-position: left-center;
+        }
+        .row-2 .div-2
+        {
+            background: url(./image/PuppyImage.jpg) no-repeat;
+            background-size:100px  ;
+            background-position: right-center;
+        }
+        .row-2 .div-3
+        {
+            background: url(./image/PuppyImage.jpg) no-repeat;
+            background-size:100px  ;
+            background-position: left-bottom;
+        }
+        .row-3 .div-1
+        {
+            background: url(./image/PuppyImage.jpg) no-repeat;
+            background-size:100px  ;
+            background-position: center-bottom;
+        }
+        .row-3 .div-2
+        {
+            background: url(./image/PuppyImage.jpg) no-repeat;
+            background-size:100px  ;
+            background-position: right-bottom;
+        }
+        .row-3 .div-3
+        {
+            background: url(./image/PuppyImage.jpg) no-repeat;
+            background-size:100px  ;
+            background-position: 50% 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Background Position Demo</h1>
+    <div class="row-1">
+        <div class="div-1"></div>
+        <div class="div-2"></div>
+        <div class="div-3"></div>
+    </div>
+    <div class="row-2">
+        <div class="div-1"></div>
+        <div class="div-2"></div>
+        <div class="div-3"></div>
+    </div>
+    <div class="row-3">
+        <div class="div-1"></div>
+        <div class="div-2"></div>
+        <div class="div-3"></div>
+    </div>
+</body>
+</html>
