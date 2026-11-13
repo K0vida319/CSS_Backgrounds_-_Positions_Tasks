@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/favicon.png">
+    <title>CSS Background Attachment</title>
+    <style>
+        *
+        {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+
+            font-family: 'Trebuchet MS';
+        }
+        body
+        {
+            background-color: black;
+            margin: 0px 0px 70px 0px ;
+        }
+        h1
+        {
+            font-size: 50px;
+            letter-spacing: 3px;
+            background-color: black;
+            color: lightblue;
+            padding: 15px;
+            text-align: center;
+        }
+        h2
+        {
+            font-size: 70px;
+            text-align: center;
+        }
+        .p-1
+        {
+            background-color: black;
+            color: lightblue;
+            text-align: justify;
+            font-size: 20px;
+
+            padding: 25px 35px;
+            line-height: 40px;
+        }
+        .p-2
+        {
+            background-color: black;
+            color: lightblue;
+            text-align: justify;
+            font-size: 20px;
+
+            padding: 25px 35px;
+            line-height: 40px;
+
+        }
+        .p-3
+        {
+            
+            background-image: url(./image/dogimage.jpg);
+            background-attachment: local;
+            background-size: fill;
+
+            color: white;
+            text-align: justify;
+            font-size: 20px;
+            padding: 40px;
+            border: 5px rgb(188, 61, 6) solid;
+
+            width: 700px;
+            height: 400px;
+            overflow: auto;
+            /* overflow-y: scroll;
+            overflow-x: hidden; */
+        }
+        .div-scroll
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: rgb(250, 17, 79);
+            text-shadow: 2px 2px 50px rgb(240, 227, 227);
+
+            background-image: url(./image/dogimage.jpg);
+            background-attachment: scroll;
+            background-size: cover;
+
+
+            width: 100%;
+            height: 500px;
+        }
+        .div-fixed
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: rgb(250, 17, 79);
+            text-shadow: 2px 2px 50px rgb(240, 227, 227);
+
+            background-image: url(./image/dogimage.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            
+            width: 100%;
+            height: 500px;
+        }
+        
+            
+        .div-local
+        {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>CSS Background Attachment</h1>
+    <div class="div-scroll">
+        <h2>background-attachment: scroll</h2>
+    </div>
+
+    <p class="p-1">
+        The default value of background-attachment is scroll. The background image moves together with the page whenever the user scrolls.
+        Both the text and the background image scroll at the same speed. The image always stays attached to the element itself.
+        This behaviour is commonly used for normal website sections where no special scrolling effect is required.
+        Since this is the default behaviour, you usually don't need to write background-attachment: scroll; unless you want to make it explicit.
+    </p>
+
+    <div class="div-fixed">
+        <h2>background-attachment: fixed</h2>
+    </div>
+    <p class="p-2">
+            The background-attachment: fixed property keeps the background image fixed relative to the browser window.
+            When the user scrolls the page, the content moves, but the background image remains in the same position, creating a parallax-like scrolling effect.
+            This effect is commonly used in landing pages, travel websites, portfolios, and modern UI designs to make sections more attractive.
+            Be careful while using fixed backgrounds because some mobile browsers may not fully support this behaviour.
+    </p>
+    <div class="div-local">
+        
+            <p class="p-3">
+                The background-attachment: local property makes the background image scroll together with the content inside this container.
+                This property works only when the element has its own scrolling area using overflow: auto or overflow: scroll.
+                As you scroll inside this box, both the text and the background image move together.
+                Unlike fixed, the image is not attached to the browser window. Unlike scroll, it responds only to the scrolling inside this container.
+                Local backgrounds are useful for scrollable cards, chat windows, documentation panels, and other containers with internal scrolling.
+                Keep scrolling inside this box to clearly observe how the background moves along with the content.
+                This behaviour provides a better user experience when a section contains a large amount of content inside a fixed-height container.
+                Try comparing all three values — scroll, fixed, and local — to understand the difference in background movement.
+
+                The background-attachment: local property makes the background image scroll together with the content inside this container.
+                This property works only when the element has its own scrolling area using overflow: auto or overflow: scroll.
+                As you scroll inside this box, both the text and the background image move together.
+                Unlike fixed, the image is not attached to the browser window. Unlike scroll, it responds only to the scrolling inside this container.
+                Local backgrounds are useful for scrollable cards, chat windows, documentation panels, and other containers with internal scrolling.
+                Keep scrolling inside this box to clearly observe how the background moves along with the content.
+                This behaviour provides a better user experience when a section contains a large amount of content inside a fixed-height container.
+                Try comparing all three values — scroll, fixed, and local — to understand the difference in background movement.
+
+                The background-attachment: local property makes the background image scroll together with the content inside this container.
+                This property works only when the element has its own scrolling area using overflow: auto or overflow: scroll.
+                As you scroll inside this box, both the text and the background image move together.
+                Unlike fixed, the image is not attached to the browser window. Unlike scroll, it responds only to the scrolling inside this container.
+                Local backgrounds are useful for scrollable cards, chat windows, documentation panels, and other containers with internal scrolling.
+                Keep scrolling inside this box to clearly observe how the background moves along with the content.
+                This behaviour provides a better user experience when a section contains a large amount of content inside a fixed-height container.
+                Try comparing all three values — scroll, fixed, and local — to understand the difference in background movement.
+
+
+        </p>
+    </div>
+</body>
+</html>
